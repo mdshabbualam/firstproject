@@ -21,3 +21,8 @@ let a=6;
     console.log(names[1]);
     names[2]='guava';
     console.log(names);
+    names[2]='grapes';
+    console.log(names);
+    console.log(names[2]);
+    names[4]='pinapple';
+    console.log(names);

@@ -48,6 +48,6 @@ function per(){
 function mul(){
     let a= parseInt(document.getElementById("num1").value);
      let b= parseInt(document.getElementById("num2").value);
-     let sum= a*b;
-     document.getElementById("data").innerHTML=sum;
+     let mul= a*b;
+     document.getElementById("data").innerHTML=mul;
 }

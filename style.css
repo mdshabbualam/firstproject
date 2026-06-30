@@ -1,0 +1,13 @@
+form {
+    text-align: center;
+    border-style: ridge;
+    width: 30%;
+    height: 250px;
+    border-radius: 10px;
+}
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

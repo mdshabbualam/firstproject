@@ -54,3 +54,34 @@ function divide(){
    
 let nine = 9;
 console.log(nine)
+
+
+
+
+
+let age=18;
+if(age>=20){
+console.log('you are eligible for vote');
+}else{
+console.log('you are not eligible for vote');
+}
+
+let number=10;
+if(number %2 ==0){
+console.log('even number');
+}else{
+console.log('odd number');
+}
+
+let num= -10;
+if(num >=0){
+console.log('positive number');
+}else{
+console.log('negative number');
+}
+let marks= 55;
+if(marks >=55){
+console.log('You are eleigible for mains exam');
+}else{
+console.log('You are not eleigible for mains exam');
+}

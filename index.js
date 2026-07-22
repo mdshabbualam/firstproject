@@ -59,29 +59,69 @@ console.log(nine)
 
 
 
-let age=18;
-if(age>=20){
-console.log('you are eligible for vote');
-}else{
-console.log('you are not eligible for vote');
-}
+// let age=18;
+// if(age>=20){
+// console.log('you are eligible for vote');
+// }else{
+// console.log('you are not eligible for vote');
+// }
 
-let number=10;
-if(number %2 ==0){
-console.log('even number');
-}else{
-console.log('odd number');
-}
+// let number=10;
+// if(number %2 ==0){
+// console.log('even number');
+// }else{
+// console.log('odd number');
+// }
 
-let num= -10;
-if(num >=0){
-console.log('positive number');
-}else{
-console.log('negative number');
-}
-let marks= 55;
-if(marks >=55){
-console.log('You are eleigible for mains exam');
-}else{
-console.log('You are not eleigible for mains exam');
-}
+// let num= -10;
+// if(num >=0){
+// console.log('positive number');
+// }else{
+// console.log('negative number');
+// }
+// let marks= 55;
+// if(marks >=55){
+// console.log('You are eleigible for mains exam');
+// }else{
+// console.log('You are not eleigible for mains exam');
+// }
+
+// let age=20;
+// if(age >=20){
+//     console.log('you are aleigible');
+// }
+
+// else{
+//     console. log('you are not aleigible');
+// }
+
+//  let age=18;
+//  if{
+//     console.log{}
+//  }
+//  else(age <=18){
+//     console.log{'you are not aleigble' }
+//  }
+
+//  let num = Number(prompt("Enter any number:"));
+//  if(num %2==0){
+// console.log('Even number');
+//  }
+//  else{
+//     console.log('Odd Number');
+//  }
+
+ let num = Number(prompt("Enter any number:"));
+ if(num >=90){
+    console.log('first devision');
+ }
+ else if(num >=70){
+    console.log('seconde devision');
+ }
+  else if (num >=50){
+    console.log('third devision');
+  }
+  else{
+    console.log('faild');
+  }
+

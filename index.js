@@ -111,17 +111,35 @@ console.log(nine)
 //     console.log('Odd Number');
 //  }
 
- let num = Number(prompt("Enter any number:"));
- if(num >=90){
-    console.log('first devision');
- }
- else if(num >=70){
-    console.log('seconde devision');
- }
-  else if (num >=50){
-    console.log('third devision');
-  }
-  else{
-    console.log('faild');
-  }
+//  let num = Number(prompt("Enter any number:"));
+//  if(num >=90){
+//     console.log('first devision');
+//  }
+//  else if(num >=70){
+//     console.log('seconde devision');
+//  }
+//   else if (num >=50){
+//     console.log('third devision');
+//   }
+//   else{
+//     console.log('faild');
+//   }
 
+// let score = Number(prompt("Enter your test (0-100):"));
+// if (score >=90){
+//   console.log("Grade:A");
+// }
+// else if(score >=70){
+  
+// }
+
+function checkevenorodd()
+{
+   let number=Number(document.getElementById("number1").value);
+    if(number %2==0){
+      document.getElementById("answer1").innerHTML="even number";
+    }
+    else{
+      document.getElementById("answer1").innerHTML="odd";
+    }
+}

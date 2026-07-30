@@ -162,13 +162,28 @@ console.log(nine)
 //  }
             
 // let  i=1;
-// while(i<=19){
+// while(i<=19){git status
 //   console.log(i);
 //   i+2;
 // }
 
-let i=1; 
-while(i+=10){
-  console.log(i);
- i++
-}
+// let i=1; 
+// while(i+=10){
+//   console.log(i);
+//  i++
+// }
+
+//FOR LOOP -----
+
+ for (i=1; i<=10; i++){
+     console.log(i);
+ }
+
+
+/// DO WHILE LOOP---
+
+// let i=1;
+// do{
+//     console.log(i);
+//     i++;
+// } while(i<=5);

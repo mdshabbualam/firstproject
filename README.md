@@ -3,3 +3,239 @@ my first project
 <br>
 <p>hello world</p>
 <h1>hello</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Loops</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .intro {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .loops {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #0066cc;
+        }
+
+        .card p {
+            color: #555;
+            min-height: 60px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #0066cc;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004999;
+        }
+
+        .output {
+            margin-top: 15px;
+            padding: 10px;
+            min-height: 50px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            color: #222;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .loops {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>JavaScript Loops</h1>
+
+        <p class="intro">
+            Click the buttons to see how While, For and Do-While loops work.
+        </p>
+
+        <div class="loops">
+
+            <!-- WHILE LOOP -->
+            <div class="card">
+
+                <h2>While Loop</h2>
+
+                <p>
+                    The while loop checks the condition first
+                    and then executes the code.
+                </p>
+
+                <button onclick="runWhileLoop()">
+                    Run While Loop
+                </button>
+
+                <div id="whileOutput" class="output">
+                    Output will appear here
+                </div>
+
+            </div>
+
+
+            <!-- FOR LOOP -->
+            <div class="card">
+
+                <h2>For Loop</h2>
+
+                <p>
+                    The for loop is useful when we know
+                    how many times the code should run.
+                </p>
+
+                <button onclick="runForLoop()">
+                    Run For Loop
+                </button>
+
+                <div id="forOutput" class="output">
+                    Output will appear here
+                </div>
+
+            </div>
+
+
+            <!-- DO WHILE LOOP -->
+            <div class="card">
+
+                <h2>Do-While Loop</h2>
+
+                <p>
+                    The do-while loop runs the code first
+                    and checks the condition afterward.
+                </p>
+
+                <button onclick="runDoWhileLoop()">
+                    Run Do-While Loop
+                </button>
+
+                <div id="doWhileOutput" class="output">
+                    Output will appear here
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // =========================
+        // WHILE LOOP
+        // =========================
+
+        function runWhileLoop() {
+
+            let i = 1;
+
+            let result = "";
+
+            while (i <= 5) {
+
+                result += i + " ";
+
+                i++;
+            }
+
+            document.getElementById("whileOutput").innerText = result;
+        }
+
+
+        // =========================
+        // FOR LOOP
+        // =========================
+
+        function runForLoop() {
+
+            let result = "";
+
+            for (let i = 1; i <= 5; i++) {
+
+                result += i + " ";
+            }
+
+            document.getElementById("forOutput").innerText = result;
+        }
+
+
+        // =========================
+        // DO-WHILE LOOP
+        // =========================
+
+        function runDoWhileLoop() {
+
+            let i = 1;
+
+            let result = "";
+
+            do {
+
+                result += i + " ";
+
+                i++;
+
+            } while (i <= 5);
+
+            document.getElementById("doWhileOutput").innerText = result;
+        }
+
+    </script>
+
+</body>
+</html>

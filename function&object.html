@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object //
+        let student={
+            name:"shabbu",
+            age:19,
+            course:"B.tech"
+         }
+        //  used dot rotation
+        console.log(student.name),
+        console.log(student.age);
+
+        let studen={
+            name:"shabbu",
+            age:19,
+            course:"B.tech"
+        }
+        //  used bracket rotation
+         console.log(student["age"]);
+       console.log(student["course"]);
+
+       let  person={
+            name:"shabbu",
+            adddress:"bara sumera",
+            age:19,
+            course:"B.tech",
+            greet: function(){
+                console.log("hello i am"+this.name);
+            }
+            };
+            person.greet();
+    
+
+
+
+    </script>
+</body>
+</html>

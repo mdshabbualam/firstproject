@@ -184,3 +184,106 @@ my first project
   </script>
 </body>
 </html>
+
+/////////////
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #ccc;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+.card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+//////
+
+// script.js
+
+// 1. Object
+const product = {
+    title: "Mountain Explorer",
+    price: 999,
+    description: "Explore beautiful mountains.",
+    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600"
+};
+
+
+// 2. Function
+function createCard(data) {
+
+    const container = document.getElementById("card-container");
+
+    const card = document.createElement("div");
+
+    card.className = "card";
+
+    card.innerHTML = `
+        <img src="${data.image}" alt="Product">
+
+        <div class="card-content">
+
+            <h2>${data.title}</h2>
+
+            <p>${data.description}</p>
+
+            <h3>₹${data.price}</h3>
+
+            <button onclick="buyProduct()">
+                Buy Now
+            </button>
+
+        </div>
+    `;
+
+    container.appendChild(card);
+}
+
+
+// 3. Button Function
+function buyProduct() {
+    alert("Product Added!");
+}
+
+
+// 4. Function call
+createCard(product);
+
+        
